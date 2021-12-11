@@ -4,6 +4,7 @@ body{
   margin: 0;
   background-color: #020202;
   font-family: 'Jura', sans-serif;
+  color: #fff;
 }
 *{
   box-sizing: border-box;

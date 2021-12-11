@@ -2,6 +2,9 @@
   .nav {
     display: flex;
     justify-content: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 10px;
     ul {
       list-style: none;
       margin: 0;
@@ -24,13 +27,61 @@
       }
     }
   }
+  .slogan {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/slogan-image.jpg);
+    background-position:center;
+    background-size: cover;
+    z-index: 0;
+    h1 {
+      position: relative;
+      top: 140px;
+      text-align: center;
+      letter-spacing: 6px;
+      font-size: 40px;
+      font-family: "Macondo", cursive;
+      span {
+        font-size: 72px;
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
+  .slogan{
+    h1{
+      font-size: 32px!important;
+      letter-spacing: 3px!important;
+      span{
+        font-size: 46px!important;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .slogan{
+    h1{
+      font-size: 16px!important;
+      position: static;
+      span{
+        font-size: 24px!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
   .span {
     display: none;
   }
   .img {
-    display: block!important;
+    display: block !important;
   }
 }
