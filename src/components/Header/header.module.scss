@@ -30,6 +30,7 @@
   .slogan {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +42,7 @@
     z-index: 0;
     h1 {
       position: relative;
-      top: 140px;
+      top: -140px;
       text-align: center;
       letter-spacing: 6px;
       font-size: 40px;
