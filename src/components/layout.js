@@ -10,19 +10,17 @@ import PropTypes from "prop-types"
 
 import Header from "./Header/header"
 import "./layout.css"
+import About from "./About/About"
 
-const Layout = ({ children }) => {
+const Layout = () => {
 
   return (
     <>
       <Header />
-        <main>{children}</main>
+      <About/>
     </>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

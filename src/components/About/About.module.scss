@@ -1,0 +1,184 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  .about_title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    h2 {
+      font-family: "Macondo", cursive;
+      font-size: 64px;
+    }
+    .profile_div {
+      position: relative;
+      top: 100px;
+      margin: 0 100px;
+      img {
+        z-index: 2;
+        position: relative;
+        display: block;
+      }
+      .ang_blur {
+        width: 250px;
+        height: 250px;
+        background: conic-gradient(red, blue);
+        filter: blur(100px);
+        position: relative;
+        top: -250px;
+        z-index: 1;
+      }
+    }
+  }
+  .about_body {
+    display: flex;
+    justify-content: center;
+    > :nth-child(2) {
+      margin: 0 30px;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      margin: auto;
+      max-width: 400px;
+      height: 500px;
+
+      position: relative;
+      padding: 10px 30px;
+      box-sizing: border-box;
+
+      $border: 3px;
+      background-color: #020202;
+      background-clip: padding-box; /* !importanté */
+      border: solid $border transparent; /* !importanté */
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(to bottom, #ff8787, #9887ff);
+      }
+      h3 {
+        font-size: 42px;
+      }
+      span {
+        margin: 15px 0px;
+      }
+    }
+    .skills {
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .tools {
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .bio {
+      span {
+        line-height: 1.6;
+        font-size: 20px;
+      }
+    }
+  }
+  .currently {
+    margin-top: 100px;
+    summary {
+      font-size: 42px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    span {
+      font-size: 26px;
+      ul{
+        padding-left: 60px;
+        li{
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1100px){
+  .about_body{
+    flex-direction: column;
+    >div{
+      border-radius: 0!important;
+      margin-top: 30px!important;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .about_title{
+    h2{
+      font-size: 48px!important;
+    }
+    .profile_div{
+      margin: 0 40px!important;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .about_title{
+    h2{
+      font-size: 32px!important;
+    }
+    .profile_div{
+      margin: 0 20px!important;
+      img{
+        width: 150px;
+        left: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .about_title{
+    h2{
+      font-size: 24px!important;
+    }
+    .profile_div{
+      margin: 0 0px!important;
+      img{
+        width: 100px;
+        left: 10px;
+        top: -30px;
+      }
+      .ang_blur{
+        width: 130px!important;
+        height: 130px!important;
+      }
+    }
+  }
+  .currently{
+    summary{
+      font-size: 24px!important;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .about_title{
+    h2{
+      font-size: 20px!important;
+    }
+    .profile_div{
+      img{
+        width: 80px;
+        top: -50px!important;
+      }
+      .ang_blur{
+        width: 100px!important;
+        height: 100px!important;
+      }
+    }
+  }
+}
