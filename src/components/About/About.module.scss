@@ -162,6 +162,14 @@
   .currently{
     summary{
       font-size: 24px!important;
+
+    }
+    span{
+      ul{
+        li{
+          font-size: 18px;
+        }
+      }
     }
   }
 }
