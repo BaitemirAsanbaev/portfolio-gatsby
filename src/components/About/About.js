@@ -1,5 +1,5 @@
 import * as React from "react"
-import profile_photo from "../../images/profile-photo.png"
+import profile_photo from "../../images/profile-photo.jpg"
 import { about, about_title, ang_blur, profile_div, about_body, skills, bio, tools, currently } from "./About.module.scss"
 
 const About = () => {
