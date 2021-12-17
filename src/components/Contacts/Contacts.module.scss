@@ -1,0 +1,31 @@
+.contacts{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  box-shadow: 0 -10px 60px rgb(17, 46, 177);
+  >div{
+    padding: 30px 0;
+    a{
+      margin: 0 20px;
+      img{
+        width: 100px;
+        filter: invert(100%);
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .contacts{
+    >div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a{
+        margin: 20px 0;
+        img{
+          width: 60px;
+        }
+      }
+    }
+  }
+}

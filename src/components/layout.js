@@ -12,6 +12,7 @@ import "./layout.css"
 import About from "./About/About"
 import { StaticImage } from "gatsby-plugin-image"
 import Projects from "./Projects/Projects"
+import Contacts from "./Contacts/Contacts"
 
 const Layout = () => {
 
@@ -21,6 +22,7 @@ const Layout = () => {
       <About/>
       <StaticImage src="../images/laptop.png" alt="laptop image"/>
       <Projects/>
+      <Contacts/>
     </>
   )
 }

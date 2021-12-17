@@ -31,6 +31,7 @@ const Projects = () => {
       scrollbar={{ draggable: true }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      autoplay={true}
     >
 
       {result}
