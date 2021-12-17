@@ -8,7 +8,7 @@ const About = () => {
       <div className={about_title}>
         <h2>Baitemir</h2>
         <div className={profile_div}>
-          <img src={profile_photo} alt="profile photo" />
+          <img src={profile_photo} alt="profile foto" />
           <div className={ang_blur}>
           </div>
         </div>

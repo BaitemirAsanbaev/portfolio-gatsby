@@ -6,12 +6,12 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
 
 import Header from "./Header/header"
 import "./layout.css"
 import About from "./About/About"
 import { StaticImage } from "gatsby-plugin-image"
+import Projects from "./Projects/Projects"
 
 const Layout = () => {
 
@@ -20,6 +20,7 @@ const Layout = () => {
       <Header />
       <About/>
       <StaticImage src="../images/laptop.png" alt="laptop image"/>
+      <Projects/>
     </>
   )
 }
